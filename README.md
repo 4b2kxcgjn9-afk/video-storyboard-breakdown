@@ -10,7 +10,18 @@
 - **7 列高密度分镜表**：镜号 / 景别 / 运镜 / 画面内容 / 声音对白 / 时长 / 备注教学点
 - **声音设定**、时长汇总、制作提醒
 
-## 安装
+## 发给任何 AI 代理直接用（无需安装）
+
+`AGENT.md` 是一份独立完整的指令，合并了全部流程、规范和示例。不能运行命令、只能看图或看视频的代理，它也教了对应的读片方法。
+
+把下面这段话连同视频一起发给任意代理（ChatGPT、Gemini、Claude、Cursor 等）：
+
+> 先读这份指令并严格照做：https://raw.githubusercontent.com/4b2kxcgjn9-afk/video-storyboard-breakdown/main/AGENT.md
+> 然后拆解我发的这个视频，给我分镜提示词。
+
+如果对方打不开链接，就把 `AGENT.md` 的全文复制给它。
+
+## 作为 Skill 安装（Claude Code / Codex）
 
 ```bash
 git clone https://github.com/4b2kxcgjn9-afk/video-storyboard-breakdown.git ~/.agents/skills/video-storyboard-breakdown
@@ -43,6 +54,7 @@ bash scripts/extract.sh video.mp4 /tmp/out
 
 | 文件 | 说明 |
 |---|---|
+| `AGENT.md` | 通用单文件版本，可以直接发给任何代理 |
 | `SKILL.md` | 触发条件、流程清单、硬性规则 |
 | `REFERENCE.md` | 风格锚、资产、分镜表、声音的详细规范 |
 | `EXAMPLES.md` | 产出示例 |
